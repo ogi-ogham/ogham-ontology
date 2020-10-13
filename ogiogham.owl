@@ -272,14 +272,6 @@
     
 
 
-    <!-- http://ogham.link/ontology#Ireland -->
-
-    <owl:Class rdf:about="http://ogham.link/ontology#Ireland">
-        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#State"/>
-    </owl:Class>
-    
-
-
     <!-- http://ogham.link/ontology#Material -->
 
     <owl:Class rdf:about="http://ogham.link/ontology#Material">
@@ -292,14 +284,6 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#MomenclatureWord">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Word"/>
-    </owl:Class>
-    
-
-
-    <!-- http://ogham.link/ontology#NorthernIreland -->
-
-    <owl:Class rdf:about="http://ogham.link/ontology#NorthernIreland">
-        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#State"/>
     </owl:Class>
     
 
