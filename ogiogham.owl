@@ -189,6 +189,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Barony">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#County"/>
+        <rdfs:label xml:lang="en">Barony</rdfs:label>
     </owl:Class>
     
 
@@ -197,6 +198,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#CivilParish">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Barony"/>
+        <rdfs:label xml:lang="en">Civil Parish</rdfs:label>
     </owl:Class>
     
 
@@ -205,6 +207,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Collection">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
     </owl:Class>
     
 
@@ -213,6 +216,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#County">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Province"/>
+        <rdfs:label xml:lang="en">County</rdfs:label>
     </owl:Class>
     
 
@@ -221,6 +225,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#CountyTown">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#ElectoralDevision"/>
+        <rdfs:label xml:lang="en">Country Town</rdfs:label>
     </owl:Class>
     
 
@@ -229,6 +234,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#ElectoralDevision">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#CivilParish"/>
+        <rdfs:label xml:lang="en">Electoral Devision</rdfs:label>
     </owl:Class>
     
 
@@ -237,6 +243,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#FormulaWord">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Word"/>
+        <rdfs:label xml:lang="en">Formula Word</rdfs:label>
     </owl:Class>
     
 
@@ -245,6 +252,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#GeographicLocation">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Place"/>
+        <rdfs:label xml:lang="en">Geographic Location</rdfs:label>
     </owl:Class>
     
 
@@ -253,14 +261,16 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Material">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Material</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://ogham.link/ontology#MomenclatureWord -->
+    <!-- http://ogham.link/ontology#NomenclatureWord -->
 
-    <owl:Class rdf:about="http://ogham.link/ontology#MomenclatureWord">
+    <owl:Class rdf:about="http://ogham.link/ontology#NomenclatureWord">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Word"/>
+        <rdfs:label xml:lang="en">Nomenclature Word</rdfs:label>
     </owl:Class>
     
 
@@ -269,6 +279,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#OghamCollection">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <rdfs:label xml:lang="en">Ogham Collection</rdfs:label>
     </owl:Class>
     
 
@@ -277,6 +288,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#OghamSite">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#GeographicLocation"/>
+        <rdfs:label xml:lang="en">Ogham Site</rdfs:label>
     </owl:Class>
     
 
@@ -285,6 +297,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#OghamStone">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#OghamCollection"/>
+        <rdfs:label xml:lang="en">Ogham Stone</rdfs:label>
     </owl:Class>
     
 
@@ -293,7 +306,6 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Person">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label xml:lang="de">Ogham Person</rdfs:label>
         <rdfs:label xml:lang="en">Ogham Person</rdfs:label>
     </owl:Class>
     
@@ -303,6 +315,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Place">
         <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
+        <rdfs:label xml:lang="de">Place Concept</rdfs:label>
     </owl:Class>
     
 
@@ -311,6 +324,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Province">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#State"/>
+        <rdfs:label xml:lang="en">Province</rdfs:label>
     </owl:Class>
     
 
@@ -319,6 +333,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#State">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#GeographicLocation"/>
+        <rdfs:label xml:lang="en">State</rdfs:label>
     </owl:Class>
     
 
@@ -327,6 +342,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Townland">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#ElectoralDevision"/>
+        <rdfs:label xml:lang="en">Townland</rdfs:label>
     </owl:Class>
     
 
@@ -335,6 +351,7 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Word">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Word</rdfs:label>
     </owl:Class>
     
 
@@ -517,7 +534,6 @@
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:label xml:lang="de">OWL Thing</rdfs:label>
         <rdfs:label xml:lang="en">OWL Thing</rdfs:label>
     </rdf:Description>
     
@@ -533,7 +549,6 @@ A SKOS concept can be viewed as an idea or notion; a unit of thought. However, w
 
 The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.</dc:description>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
-        <rdfs:label xml:lang="de">Konzept</rdfs:label>
     </owl:Class>
     
 
@@ -553,7 +568,6 @@ The notion of a SKOS concept is useful when describing the conceptual or intelle
     <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Place">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <dc:description xml:lang="en">Places are instances of skos:Concept as well as contexts for Locations and Names.</dc:description>
-        <rdfs:label xml:lang="de">Pleiades Place</rdfs:label>
         <rdfs:label xml:lang="en">Pleiades Place</rdfs:label>
     </owl:Class>
 </rdf:RDF>
