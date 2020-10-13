@@ -302,6 +302,15 @@
     
 
 
+    <!-- http://ogham.link/ontology#OghamTribe -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#OghamTribe">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <rdfs:label xml:lang="en">Ogham Tribe</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://ogham.link/ontology#Person -->
 
     <owl:Class rdf:about="http://ogham.link/ontology#Person">
@@ -549,6 +558,16 @@ A SKOS concept can be viewed as an idea or notion; a unit of thought. However, w
 
 The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.</dc:description>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:comment xml:lang="en">The Group class represents a collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions).</rdfs:comment>
+        <rdfs:label xml:lang="en">Group</rdfs:label>
     </owl:Class>
     
 
