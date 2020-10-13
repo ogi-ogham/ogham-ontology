@@ -206,7 +206,7 @@
     <!-- http://ogham.link/ontology#Collection -->
 
     <owl:Class rdf:about="http://ogham.link/ontology#Collection">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#GeographicLocation"/>
         <rdfs:label xml:lang="en">Collection</rdfs:label>
     </owl:Class>
     
@@ -287,7 +287,7 @@
     <!-- http://ogham.link/ontology#OghamSite -->
 
     <owl:Class rdf:about="http://ogham.link/ontology#OghamSite">
-        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#GeographicLocation"/>
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Collection"/>
         <rdfs:label xml:lang="en">Ogham Site</rdfs:label>
     </owl:Class>
     
