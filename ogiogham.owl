@@ -39,6 +39,15 @@
     
 
 
+    <!-- http://ogham.link/ontology#alias -->
+
+    <owl:AnnotationProperty rdf:about="http://ogham.link/ontology#alias">
+        <rdfs:label xml:lang="de">alias</rdfs:label>
+        <rdfs:label xml:lang="en">alias</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://ogham.link/ontology#isActorStatus -->
 
     <owl:AnnotationProperty rdf:about="http://ogham.link/ontology#isActorStatus"/>
@@ -199,12 +208,122 @@
     
 
 
-    <!-- http://ogham.link/ontology#Inscription -->
+    <!-- http://ogham.link/ontology#Barony -->
 
-    <owl:Class rdf:about="http://ogham.link/ontology#Inscription">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature"/>
-        <rdfs:label xml:lang="de">Inschrift</rdfs:label>
-        <rdfs:label xml:lang="en">Inscription</rdfs:label>
+    <owl:Class rdf:about="http://ogham.link/ontology#Barony">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#County"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#CivilParish -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#CivilParish">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Barony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#Collection -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#Collection">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#County -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#County">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Province"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#CountyTown -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#CountyTown">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#ElectoralDevision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#ElectoralDevision -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#ElectoralDevision">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#CivilParish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#FormulaWord -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#FormulaWord">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#GeographicLocation -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#GeographicLocation">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#Ireland -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#Ireland">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#Material -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#Material">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#MomenclatureWord -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#MomenclatureWord">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#NorthernIreland -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#NorthernIreland">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#OghamCollection -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#OghamCollection">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#OghamSite -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#OghamSite">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#GeographicLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#OghamStone -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#OghamStone">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#OghamCollection"/>
     </owl:Class>
     
 
@@ -213,6 +332,38 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#Place">
         <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#Province -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#Province">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#State -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#State">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#GeographicLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#Townland -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#Townland">
+        <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#ElectoralDevision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#Word -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#Word">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     </owl:Class>
     
 
@@ -270,24 +421,6 @@
         <rdfs:label xml:lang="el">Ανθρωπογενές Υλικό Πράγμα</rdfs:label>
         <rdfs:label xml:lang="ru">Физическая Рукотворная Вещь</rdfs:label>
         <rdfs:label xml:lang="zh">人造实体物</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing"/>
-        <rdfs:comment>This class comprises physical features that are purposely created by human activity, such as scratches, artificial caves, artificial water channels, etc.
-      No assumptions are made as to the extent of modification required to justify regarding a feature as man-made. For example, rock art or even “cup and ring” carvings on bedrock a regarded as types of E25 Man-Made Feature.
-      </rdfs:comment>
-        <rdfs:label xml:lang="pt">Característica Fabricada</rdfs:label>
-        <rdfs:label xml:lang="fr">Caractéristique fabriquée</rdfs:label>
-        <rdfs:label xml:lang="de">Hergestelltes Merkmal</rdfs:label>
-        <rdfs:label xml:lang="en">Man-Made Feature</rdfs:label>
-        <rdfs:label xml:lang="el">Ανθρωπογενές Μόρφωμα</rdfs:label>
-        <rdfs:label xml:lang="ru">Искусственный Признак</rdfs:label>
-        <rdfs:label xml:lang="zh">人造外貌表征</rdfs:label>
     </owl:Class>
     
 
