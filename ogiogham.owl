@@ -48,18 +48,6 @@
     
 
 
-    <!-- http://ogham.link/ontology#isActorStatus -->
-
-    <owl:AnnotationProperty rdf:about="http://ogham.link/ontology#isActorStatus"/>
-    
-
-
-    <!-- http://ogham.link/ontology#isActorType -->
-
-    <owl:AnnotationProperty rdf:about="http://ogham.link/ontology#isActorType"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
@@ -197,17 +185,6 @@
     
 
 
-    <!-- http://ogham.link/ontology#Actor -->
-
-    <owl:Class rdf:about="http://ogham.link/ontology#Actor">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
-        <dc:description xml:lang="de">Akteure als Konzept.</dc:description>
-        <rdfs:label xml:lang="en">Actor</rdfs:label>
-        <rdfs:label xml:lang="de">Akteur</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://ogham.link/ontology#Barony -->
 
     <owl:Class rdf:about="http://ogham.link/ontology#Barony">
@@ -308,6 +285,16 @@
 
     <owl:Class rdf:about="http://ogham.link/ontology#OghamStone">
         <rdfs:subClassOf rdf:resource="http://ogham.link/ontology#OghamCollection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ogham.link/ontology#Person -->
+
+    <owl:Class rdf:about="http://ogham.link/ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="de">Ogham Person</rdfs:label>
+        <rdfs:label xml:lang="en">Ogham Person</rdfs:label>
     </owl:Class>
     
 
@@ -547,6 +534,16 @@ A SKOS concept can be viewed as an idea or notion; a unit of thought. However, w
 The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.</dc:description>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
         <rdfs:label xml:lang="de">Konzept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:comment xml:lang="en">The Person class represents people. Something is a Person if it is a person. We don&apos;t nitpic about whether they&apos;re alive, dead, real, or imaginary. The Person class is a sub-class of the Agent class, since all people are considered &apos;agents&apos; in FOAF.</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
 
