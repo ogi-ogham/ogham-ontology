@@ -11,7 +11,7 @@ jobs:
     - name: Create Doxygen Documentation 🔧
       run: |
          sudo apt-get install python3 python-pip -y
-         pip install pylode
+         pip3 install wheel pylode
          mkdir docs
          cd docs
          pylode -i ogiogham.owl
