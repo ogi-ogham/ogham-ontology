@@ -1,4 +1,4 @@
-name: Java CI
+name: Ontology Documentation CI
 
 on: [push]
 
@@ -8,13 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Create Doxygen Documentation 🔧
+    - name: Create Ontology Documentation 🔧
       run: |
          sudo apt-get install python3 python3-setuptools python-pip -y
          sudo apt-get install gcc libpq-dev -y
          sudo apt-get install python-dev  python-pip -y
          sudo apt-get install python3-dev python3-pip python3-venv python3-wheel -y
          sudo pip3 install wheel pylode
+         ls
          pylode -i ogiogham.owl
          mkdir docs
          cd docs
