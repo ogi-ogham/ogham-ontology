@@ -1,0 +1,23 @@
+name: Java CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Create Doxygen Documentation 🔧
+      run: |
+         sudo apt-get install python3 python-pip -y
+         pip install pylode
+         mkdir docs
+         cd docs
+         pylode -i ogham.owl
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         BRANCH: gh-pages
+         FOLDER: docs/
