@@ -15,9 +15,9 @@ jobs:
          sudo apt-get install python-dev  python-pip -y
          sudo apt-get install python3-dev python3-pip python3-venv python3-wheel -y
          sudo pip3 install wheel pylode
+         pylode -i ogiogham.owl
          mkdir docs
          cd docs
-         pylode -i ../ogiogham.owl
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
