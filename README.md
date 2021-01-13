@@ -1,4 +1,4 @@
-# ogham-ontology
+# ogham-ontology **[deprecated]**
 
 current version: https://github.com/FellowsFreiesWissen/Ogham/tree/main/owl
 
