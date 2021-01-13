@@ -261,9 +261,9 @@
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#Akteur">Akteur</a></li>
+        <li><a href="#Agent">Agent</a></li>
         <li><a href="#Barony">Barony</a></li>
-        <li><a href="#Chosematriellefabrique">Chose matérielle fabriquée</a></li>
+        <li><a href="#CRMEntity">CRM Entity</a></li>
         <li><a href="#CivilParish">Civil Parish</a></li>
         <li><a href="#Collection">Collection</a></li>
         <li><a href="#Concept">Concept</a></li>
@@ -286,6 +286,8 @@
         <li><a href="#OghamStone">Ogham Stone</a></li>
         <li><a href="#OghamTribe">Ogham Tribe</a></li>
         <li><a href="#Person">Person</a></li>
+        <li><a href="#PhysicalMan-MadeThing">Physical Man-Made Thing</a></li>
+        <li><a href="#Place">Place</a></li>
         <li><a href="#PlaceConcept">Place Concept</a></li>
         <li><a href="#PleiadesPlace">Pleiades Place</a></li>
         <li><a href="#Point">Point</a></li>
@@ -294,10 +296,8 @@
         <li><a href="#State">State</a></li>
         <li><a href="#Townland">Townland</a></li>
         <li><a href="#Word">Word</a></li>
-        <li><a href="#">Ανθρωπογενές Αντικείμενο</a></li>
-        <li><a href="#CIDOCCRM">Οντότητα CIDOC CRM</a></li>
-        <li><a href="#E53_Place">Место</a></li>
         <li><a href="#E55_Type">Тип</a></li>
+        <li><a href="#">人造物件</a></li>
     </ul>
     <div class="entity class" id="Barony">
         <h3>Barony<sup title="class" class="sup-c">c</sup></h3>
@@ -414,8 +414,8 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://ogham.link/ontology#Townland">Townland</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://ogham.link/ontology#CountyTown">CountyTown</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://ogham.link/ontology#Townland">Townland</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -668,8 +668,8 @@
             </tr>
         </table>
     </div>
-    <div class="entity class" id="CIDOCCRM">
-        <h3>Οντότητα CIDOC CRM<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="CRMEntity">
+        <h3>CRM Entity<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -696,7 +696,7 @@
         </table>
     </div>
     <div class="entity class" id="">
-        <h3>Ανθρωπογενές Αντικείμενο<sup title="class" class="sup-c">c</sup></h3>
+        <h3>人造物件<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -723,8 +723,8 @@
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Chosematriellefabrique">
-        <h3>Chose matérielle fabriquée<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="PhysicalMan-MadeThing">
+        <h3>Physical Man-Made Thing<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -751,8 +751,8 @@
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Akteur">
-        <h3>Akteur<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="Agent">
+        <h3>Agent<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -774,14 +774,14 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://xmlns.com/foaf/0.1/Person">http://xmlns.com/foaf/0.1/Person</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://xmlns.com/foaf/0.1/Group">http://xmlns.com/foaf/0.1/Group</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://xmlns.com/foaf/0.1/Person">http://xmlns.com/foaf/0.1/Person</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="E53_Place">
-        <h3>Место<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="Place">
+        <h3>Place<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -885,20 +885,20 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/sf#MultiLineString">sf:MultiLineString</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://pleiades.stoa.org/places/vocab#Place">pleiades:Place</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/sf#MultiPolygon">sf:MultiPolygon</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/sf#MultiPoint">sf:MultiPoint</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/sf#MultiLineString">sf:MultiLineString</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://pleiades.stoa.org/places/vocab#Place">pleiades:Place</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#asGeoJSON">geosparql:asGeoJSON</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#asGeoJSON">geosparql:asGeoJSON</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#asWKT">geosparql:asWKT</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
@@ -988,9 +988,9 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1080,10 +1080,10 @@
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#hasgeometry">has geometry</a></li>
+        <li><a href="#hatGeometrie">hat Geometrie</a></li>
     </ul>
-    <div class="entity property" id="hasgeometry">
-        <h3>has geometry<sup title="object property" class="sup-op">op</sup></h3>
+    <div class="entity property" id="hatGeometrie">
+        <h3>hat Geometrie<sup title="object property" class="sup-op">op</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1108,11 +1108,11 @@
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#asGeoJSON">as GeoJSON</a></li>
-        <li><a href="#aswell-known-text">as well-known-text</a></li>
+        <li><a href="#alsGeoJSON">als GeoJSON</a></li>
+        <li><a href="#alswell-known-text">als well-known-text</a></li>
     </ul>
-    <div class="entity property" id="asGeoJSON">
-        <h3>as GeoJSON<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="alsGeoJSON">
+        <h3>als GeoJSON<sup title="datatype property" class="sup-dp">dp</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1132,8 +1132,8 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="aswell-known-text">
-        <h3>as well-known-text<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="alswell-known-text">
+        <h3>als well-known-text<sup title="datatype property" class="sup-dp">dp</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
